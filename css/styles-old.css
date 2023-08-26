@@ -124,8 +124,8 @@
 
 
 
-
-
+/* modal window */
+    
 .button {
     background: var(--iris, #4D5AE5);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -221,97 +221,25 @@
 
 
 
+
    
 
-    .portfolio-card-link {
-        display: block;   
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .portfolio-card-link:hover  {
-        box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
-    }
-
-    .portfolio-card-link:focus  {
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);   
-    }
-
-    .portfolio-card-link:hover .p-div-img,
-    .portfolio-card-link:focus .p-div-img {
-        transform: translateY(0%);
-    }
-     
-
-    .p-div-img {
-        position: absolute; 
-        top: 0;
-        font-size: 16px; 
-        line-height: 1.5;
-        letter-spacing: 0.02em; 
-        color: #f4f4fd;
-        padding: 40px 32px; 
-        background-color: #4d5ae5; 
-        height: 100%; 
-        width: 100%; 
-        transform: translateY(100%); 
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .div-img {
-        position: relative; 
-        overflow: hidden;
-    
-    }
+   
 
 
 
 
 
 
-.sec-five {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    margin: 0;
-}
 
-.ul-clients{
-    display: flex;
-    gap: 24px;
-    padding: 0;
-    margin: 0;
-}
 
-.client {
-    height: 88px;    
-    width: calc((100% - 120px) / 6);
-    
-}
 
-.a-cli {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    color: #8e8f99;   
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
 
-.a-cli:hover {
-    border-color: #404bbf; 
-    color: #404bbf;
-}
 
-.a-cli:focus {
-    border-color: #404bbf; 
-    color: #404bbf;
-}
 
-.svg-cli {
-    fill: currentColor;   
-}
+
+
+
 
 /* footer */
 
@@ -399,10 +327,7 @@
 
 /*portfolio*/
 
-.sec-p{
-    padding-top: 96px; 
-    padding-bottom: 120px;
-}
+
 
 .ulp {
     text-align: center;
@@ -415,11 +340,7 @@
     letter-spacing: 0.64px;
 }
 
-.ullp-one{
-    justify-content: center; 
-    gap: 24px;
-    margin-bottom: 72px;
-}
+
 
 .ullp-two{
     flex-wrap: wrap;
