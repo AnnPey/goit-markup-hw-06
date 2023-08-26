@@ -300,30 +300,21 @@ img {
     padding-left: 16px;
 }
 
-.container {
-    min-width: 320px;
-    max-width: 426px;
-    margin: 0 auto;
-    padding: 0 16px;
-}
+
 
 @media screen and (min-width: 768px) {
     .sec-two{
         padding: 96px 0;
     }
 
-    .li-one {
-        width: calc(100% - 24px)/2;
-    }
-
-    .container {
-        max-width: 766px;
-    }
-
     .ulli-one {
         display: flex;
-        gap: 72px 24px; 
+        gap: 24px; 
         flex-wrap: wrap;
+    }
+
+    .li-one {
+        width: calc(100% - 24px) / 2;
     }
 
     .div-li-all{
