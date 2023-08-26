@@ -300,6 +300,13 @@ img {
     padding-left: 16px;
 }
 
+.container {
+    min-width: 320px;
+    max-width: 426px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
 @media screen and (min-width: 768px) {
     .sec-two{
         padding: 96px 0;
@@ -308,7 +315,16 @@ img {
     .li-one {
         width: calc(100% - 24px)/2;
     }
-       
+
+    .container {
+        max-width: 766px;
+    }
+
+    .ulli-one {
+        display: flex;
+        gap: 72px 24px; 
+        flex-wrap: wrap;
+    }
 
     .div-li-all{
         display:none;
@@ -372,7 +388,6 @@ img {
         font-size: 16px;
         line-height: 1.5em; 
         letter-spacing: 0.32px;
-        gap: 40px;
         padding-left: 0;
         margin: 0;
     }
@@ -461,11 +476,20 @@ img {
         margin-bottom: 8px;
     }
 
+   img {
+        margin-left: 70px;
+        margin-top: 72px;
+   }
+
 @media screen and (min-width: 768px) {
     .ulli-three {
         gap: 24px;    
     }
 
+    img {
+        margin-left: 0px;
+        margin-top: 0px;
+   }
     
 }
 
@@ -474,4 +498,8 @@ img {
         padding: 120px 0;
     }
    
+    img {
+        margin-left: 0px;
+        margin-top: 0px;
+   }
 }
