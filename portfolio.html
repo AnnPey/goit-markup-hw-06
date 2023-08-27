@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--<head>
+    <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>studio</title>
@@ -31,68 +31,85 @@
           rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/styles.css" />
-      </head> -->
-  <body class="body">
-     <!--<header class="header">
-      <div class="header-container container">
-        <nav class="nav">
-          <a href="./index.htm" class="logo link"
-            >Web<span class="logo-dark">Studio</span></a
-          >
-          <ul class="list">
-            <li><a href="./index.html" class="ull link">Studio</a></li>
-            <li><a href="./portfolio.html" class=" current  ull link">Portfolio</a></li>
-            <li><a href="" class="ull link">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="contacts link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+110001111111" class="contacts link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+      </head> 
+  <body>
+   <!-- header section -->
+   <header class="header">
+    <div class="header-container container">
+      <nav class="nav">
+        <a href="./index.htm" class="logo link"
+          >Web<span class="logo-dark">Studio</span></a
+        >
+        <ul class="header-list list">
+          <li><a href="./index.html" class="current ull link">Studio</a></li>
+          <li><a href="./portfolio.html" class="ull link">Portfolio</a></li>
+          <li><a href="" class="ull link">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="address">
+        <ul class="list address-list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contacts link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+110001111111" class="contacts link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="menu-hamburger">
+        <button
+          class="btn-hamburger button menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="hamburger-icon icon" width="32" height="22">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header>-->
+    </div>
+  </header>
     <main>
-      <section class="sec-p">
-        <div class="div container">
+      <section class="portfolio-section">
+        <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
-
-          <ul class="ullp-one list">
-            <li class="iris1">
-              <button class="all" type="button">All</button>
+          <!--Filters -->
+          <ul class="list list-filters">
+            <li>
+              <button class="filters-btn button" type="button">All</button>
             </li>
-            <li class="iris2">
-              <button class="all" type="button">Web Site</button>
+            <li>
+              <button class="filters-btn button" type="button">Web Site</button>
             </li>
-            <li class="iris3">
-              <button class="all" type="button">App</button>
+            <li>
+              <button class="filters-btn button" type="button">App</button>
             </li>
-            <li class="iris4">
-              <button class="all" type="button">Design</button>
+            <li>
+              <button class="filters-btn button" type="button">Design</button>
             </li>
-            <li class="iris5">
-              <button class="all" type="button">Marketing</button>
+            <li>
+              <button class="filters-btn button" type="button">
+                Marketing
+              </button>
             </li>
           </ul>
-
-         <!-- <ul class="ullp-two list">
+          <!--Option-->
+         <ul class="ullp-two list">
             <li class="lipli li-two-p">
               <a class="portfolio-card-link link" href="">
                 <div class="div-img">
                   <img
+                    srcset="./images/portfolio/BankingApp1.jpg 1x ./images/portfolio/BankingApp1-p@2x 2x"
                     src="./images/portfolio/BankingApp1.jpg"
                     alt="BankingApp"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="p-div-img">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -110,10 +127,12 @@
               <a class="portfolio-card-link link" href="">
                 <div class="div-img">
                   <img
+                  srcset="./images/portfolio/CashlessPayment2.jpg 1x ./images/portfolio/CashlessPayment2-p@2x 2x"
                     src="./images/portfolio/CashlessPayment2.jpg"
                     alt="CashlessPayment"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="p-div-img">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -131,10 +150,12 @@
               <a class="portfolio-card-link link" href="">
                 <div class="div-img">
                   <img
+                    srcset="./images/portfolio/MeditationApp3.jpg 1x ./images/portfolio/MeditationApp3-p@2x 2x"
                     src="./images/portfolio/MeditationApp3.jpg"
                     alt="MeditationApp"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="p-div-img">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -152,10 +173,12 @@
               <a class="portfolio-card-link link" href="">
                 <div class="div-img">
                   <img
+                    srcset="./images/portfolio/TaxiServiceMarketing4.jpg 1x ./images/portfolio/TaxiServiceMarketing4-p@2x 2x"
                     src="./images/portfolio/TaxiServiceMarketing4.jpg"
                     alt="TaxiServiceMarketing"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="p-div-img">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -173,10 +196,12 @@
               <a class="portfolio-card-link link" href="">
                 <div class="div-img">
                   <img
+                    srcset="./images/portfolio/ScreenIllustrations5.jpg 1x ./images/portfolio/ScreenIllustrations5-p@2x 2x"
                     src="./images/portfolio/ScreenIllustrations5.jpg"
                     alt="ScreenIllustrations"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
                   <p class="p-div-img">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -194,10 +219,12 @@
               <a class="portfolio-card-link link" href="">
                 <div class="div-img">
                     <img
+                    srcset="./images/portfolio/OnlineCourses6.jpg 1x ./images/portfolio/OnlineCourses6-p@2x 2x"
                     src="./images/portfolio/OnlineCourses6.jpg"
                     alt="OnlineCourses"
                     width="360"
                     height="300"
+                    loading="lazy"
                     />
                     <p class="p-div-img">
                         14 Stylish and User-Friendly App Design Concepts · Task
@@ -215,10 +242,12 @@
               <a class="portfolio-card-link link" href="">
                 <div class="div-img">
                     <img
+                    srcset="./images/portfolio/InstagramStoriesConcept7.jpg 1x ./images/portfolio/InstagramStoriesConcept7-p@2x 2x"
                     src="./images/portfolio/InstagramStoriesConcept7.jpg"
                     alt="InstagramStoriesConcept"
                     width="360"
                     height="300"
+                    loading="lazy"
                     />
                     <p class="p-div-img">
                         14 Stylish and User-Friendly App Design Concepts · Task
@@ -236,10 +265,12 @@
               <a class="portfolio-card-link link" href="">
                 <div class="div-img">
                     <img
+                    srcset="./images/portfolio/OrganicFood8.jpg 1x ./images/portfolio/OrganicFood8-p@2x 2x"
                     src="./images/portfolio/OrganicFood8.jpg"
                     alt="OrganicFood"
                     width="360"
                     height="300"
+                    loading="lazy"
                     />
                     <p class="p-div-img">
                         14 Stylish and User-Friendly App Design Concepts · Task
@@ -257,10 +288,12 @@
               <a class="portfolio-card-link link" href="">
                 <div class="div-img">
                     <img
+                    srcset="./images/portfolio/FreshCoffee9.jpg 1x ./images/portfolio/FreshCoffee9-p@2x 2x"
                     src="./images/portfolio/FreshCoffee9.jpg"
                     alt="FreshCoffee"
                     width="360"
                     height="300"
+                    loading="lazy"
                     />
                     <p class="p-div-img">
                         14 Stylish and User-Friendly App Design Concepts · Task
@@ -275,13 +308,13 @@
                 </div>
               </a>
             </li>
-          </ul>-->
+          </ul>
         </div>
       </section>
     </main>
      <!-- footer section -->
     
-    <!-- <footer class="list-footer">
+    <footer class="list-footer">
       <div class="footer-container container">
         <div class="logo-foot-container">
           <a href="./index.htm" class="logo-in-footer link">Web<span class="logo-light">Studio</span></a>
@@ -344,6 +377,95 @@
           </form>
         </div>
       </div>
-    </footer>-->
+    </footer>
+
+    <!-- Mobile window -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="sub-container">
+        <button
+        class="mobile-btn modal-btn menu-toggle js-close-menu"
+        type="button"
+      >
+        <svg class="btn-icon-mobile" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+        <div class="contacts-box">
+          <nav class="mobile-list">
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu-item">
+                <a class="link link-menu-mobile" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="link link-menu-mobile" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="link link-menu-mobile" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-contacts">
+            <address class="mobile-address">
+              <ul class="list address-list-mobile">
+                <li>
+                  <a class="link mobile-tel" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a class="link mobile-email" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="mobile-contact-pic">
+            <ul class="icon-list-mobile list">
+              <li class="icon-item-mobile">
+                <a class="pic-link" href="">
+                  <svg class="mobile-social-icon icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item-mobile">
+                <a class="pic-link" href="">
+                  <svg class="mobile-social-icon icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item-mobile">
+                <a class="pic-link" href="">
+                  <svg class="mobile-social-icon icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item-mobile">
+                <a class="pic-link" href="">
+                  <svg class="mobile-social-icon icon" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+            </div>
+      </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
