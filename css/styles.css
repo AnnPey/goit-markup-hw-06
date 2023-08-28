@@ -56,6 +56,12 @@ a {
     text-decoration: none;
 }
 
+.link {
+  color: currentColor;
+  text-decoration: none;
+  display: inline-block;
+}
+
 /* adaptive img */
 img {
     display: block;
@@ -80,12 +86,14 @@ img {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 766px; 
+        padding: 0 15px;
     }
 }
 
 @media screen and (min-width: 1150px) {
     .container {
         max-width: 1158px; 
+        padding: 0 16px;
     }
 }
 
@@ -265,7 +273,6 @@ img {
 }
 
 .li-one {
-    display: flex;
     width: 396px;
     flex-direction: column;
     align-items: flex-start;
@@ -284,10 +291,9 @@ img {
     font-weight: 700;
     line-height: 1.1em; 
     letter-spacing: 0.72px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     padding-top: 72px;
     margin: 0;
-    text-align: center;
     align-self: stretch;
 }
 
@@ -300,7 +306,6 @@ img {
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
     align-self: stretch;
-    padding-left: 16px;
 }
 
 
@@ -479,9 +484,9 @@ img {
 @media screen and (min-width: 768px) {
     .ulli-three {
         display: flex;
-        gap: 24px; 
+        gap: 64px; 
         flex-wrap: wrap;   
-        margin-left: 100px;
+        justify-content: center;
     }
 
     img {
@@ -519,7 +524,7 @@ img {
 .ul-clients{
     display: flex; 
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 72px 16px;
     padding: 0;
     margin: 0;
 }
@@ -527,7 +532,6 @@ img {
 .client {
     height: 88px;    
     width: calc((100% - 120px) / 2);
-    margin-top: 72px;
     gap: 16px;
     margin-left: 35px;
 }
@@ -562,17 +566,16 @@ img {
 
     .ul-clients{
         display: flex;
-        gap: 24px;
+        gap: 62px;
         flex-wrap: wrap;
         padding: 0;
         margin: 0;
-        margin-left: 96px;
+        justify-content: center;
     }
 
     .client {
         height: 88px;    
-        width: calc((100% - 120px) / 3);
-        margin-top: 72px;
+        width: calc((100% - 16px) / 3);
         gap: 24px;
         margin-left: 0px;
     }
@@ -586,6 +589,7 @@ img {
 
     .ul-clients{ 
         margin-left: 0;
+        gap: 24px;
     }
 
     .client {
@@ -602,16 +606,17 @@ img {
     justify-content: center;
     align-items: center;
     gap: 72px 24px;
-    max-width: 582px;
+    max-width: 584px;
   }
   
   @media (min-width: 768px) {
     .footer-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: start;
       align-items: baseline;
       gap: 24px;
+      max-width: 1158px;
+      justify-content: center;
     }
   }
   @media (min-width: 1158px) {
@@ -720,9 +725,7 @@ img {
   }
   /* Subscribe */
   
-  .subscribe-container {
-    min-width: 100%;
-  }
+ 
   .subscribe-title {
     color: var(--white, #fff);
     font-size: 16px;
@@ -827,10 +830,9 @@ img {
     line-height: 1.16em;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    line-height: 1.17;
-    margin-right: 76px;  
+    line-height: 1.17; 
     margin-bottom: 17.5px;
-    
+    justify-content: center;
 }
 
 
@@ -1185,7 +1187,7 @@ button {
 
     .header-list {
         display: flex;
-        gap: 40px;
+        gap: 30px;
       }
 
     .list {
@@ -1199,7 +1201,7 @@ button {
 
     .address-list {
         display: block;
-        font-family: var(--title-font);
+        font-family:"Roboto";
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5; /* 150% */
@@ -1244,10 +1246,9 @@ button {
   }
   .sub-container{
     position: relative;
-    max-width: 428px;
+    
     height: 100%;
     padding: 80px 35px 40px 40px;
-    margin: 0 auto;
   }
   .menu-container .menu-toggle {
     position: absolute;
@@ -1291,6 +1292,10 @@ button {
     position: absolute;
   }
 
+  .studio {
+    color: #404BBF;
+  }
+
   /* menu hamburger */
   
   .hamburger-icon {
@@ -1329,11 +1334,7 @@ button {
     text-transform: capitalize;
     max-width: 100%;
     margin-bottom: 40px;
-  }
-  @media screen and (max-width: 427.98px) {
-    .mobile-tel {
-      font-size: 20px;
-    }
+
   }
   
   .mobile-email {
@@ -1354,6 +1355,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-top: 48px;
   }
   @media screen and (min-width: 320px) {
     .icon-list-mobile {
