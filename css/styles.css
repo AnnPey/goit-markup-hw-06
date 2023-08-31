@@ -81,19 +81,23 @@ img {
     padding: 0 16px;
     margin: 0 auto;
     align-items: center;
+    justify-content: center;
+    padding-left: 82px;
+    padding-right: 82px;
 }
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 766px; 
-        padding: 0 15px;
+        padding: 0 16px;
+
     }
 }
 
 @media screen and (min-width: 1150px) {
     .container {
         max-width: 1158px; 
-        padding: 0 16px;
+        padding: 0 15px;
     }
 }
 
@@ -175,7 +179,7 @@ img {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11em;
-    letter-spacing: 1.12px;
+    letter-spacing: 0.03em;
     text-align: center;
     max-width: 320px; 
     margin: 0 auto 72px;
@@ -273,7 +277,6 @@ img {
 }
 
 .li-one {
-    width: 396px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px; 
@@ -291,10 +294,9 @@ img {
     font-weight: 700;
     line-height: 1.1em; 
     letter-spacing: 0.72px;
-    margin-bottom: 8px;
-    padding-top: 72px;
-    margin: 0;
     align-self: stretch;
+    margin-bottom: 8px;
+    margin-top: 72px;
 }
 
 .p-one {
@@ -331,8 +333,8 @@ img {
 
     .h-three-p {
         letter-spacing: 0.72px;
-        margin-top: 96px;
-        margin: 0;
+        padding-top: 0;
+        margin-top: 0px;
     }
 }
 
@@ -476,15 +478,12 @@ img {
         margin-bottom: 8px;
     }
 
-   img {
-        margin-left: 70px;
-        margin-top: 72px;
-   }
+   img {}
 
 @media screen and (min-width: 768px) {
     .ulli-three {
         display: flex;
-        gap: 64px; 
+        gap: 64px 24px; 
         flex-wrap: wrap;   
         justify-content: center;
     }
@@ -566,7 +565,7 @@ img {
 
     .ul-clients{
         display: flex;
-        gap: 62px;
+        gap: 72px 24px;
         flex-wrap: wrap;
         padding: 0;
         margin: 0;
@@ -614,7 +613,6 @@ img {
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
-      gap: 24px;
       max-width: 1158px;
       justify-content: center;
     }
@@ -704,7 +702,6 @@ img {
     line-height: 1.5; /* 150% */
     letter-spacing: 0.32px;
     width: 264px;
-    margin-top: 16px;
   }
   
   .logo-foot-container {
@@ -765,6 +762,7 @@ img {
     height: 40px;
     color: var(--white-background-color);
     margin-bottom: 16px;
+    width: 398px;
   }
 
   @media (min-width: 768px) {
@@ -772,6 +770,7 @@ img {
       min-width: 264px;
       height: 40px;
       margin-bottom: 0;
+      width: 264px;
     }
   }
   
@@ -866,7 +865,7 @@ img {
 .modal-window {
     position: relative;
     z-index: 2;
-    width: 408px;
+    width: 320px;
     min-height: 584px;
     flex-shrink: 0;
     border-radius: 4px;
@@ -905,7 +904,19 @@ button {
   }
 
   .div-in-form-one {
-    margin-bottom: 8px;    
+    margin-bottom: 8px; 
+  }
+
+  @media (min-width: 768px){
+    .div-in-form-one {
+      width: 584px;  
+    }
+  }
+
+  @media screen and (min-width: 1150px) {
+    .div-in-form-one {
+      width: 0px;   
+    }
   }
 
   .div-in-form-two {
@@ -1175,7 +1186,7 @@ button {
     .contacts {
         color:  #434455;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+      }
     
     .contacts:hover {
         color: #404bbf;
@@ -1217,6 +1228,11 @@ button {
     .address {
         padding: 0;
         margin-left: 332px;
+      }
+
+      .contacts {
+        width: 153px;
+        height: 24px;
       }
 
       .address-list {
@@ -1327,7 +1343,7 @@ button {
   .mobile-tel {
     font-size: 36px;
     font-weight: 700;
-    font-style: normal;
+    font-style: "Roboto";
     line-height: 1.1111; /* 111.111% */
     letter-spacing: 0.72px;
     color: var(--iris, #4d5ae5);
