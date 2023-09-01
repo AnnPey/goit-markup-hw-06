@@ -77,20 +77,18 @@ img {
   /*common style*/
 
   .container {
-    max-width: 428px; 
+    max-width: 296px; 
     padding: 0 16px;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    padding-left: 82px;
-    padding-right: 82px;
+    
 }
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 766px; 
+        max-width: 768px; 
         padding: 0 16px;
-
     }
 }
 
@@ -179,7 +177,7 @@ img {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11em;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
     text-align: center;
     max-width: 320px; 
     margin: 0 auto 72px;
@@ -269,7 +267,7 @@ img {
 /*section sec-two */
 
 .sec-two{
-    padding: 96px 0;
+    padding: 24px 16px 96px 16px;
 }
 
 .ulli-one {
@@ -295,8 +293,8 @@ img {
     line-height: 1.1em; 
     letter-spacing: 0.72px;
     align-self: stretch;
+    margin: 72px 16px;
     margin-bottom: 8px;
-    margin-top: 72px;
 }
 
 .p-one {
@@ -319,7 +317,7 @@ img {
 
     .ulli-one {
         display: flex;
-        gap: 24px; 
+        gap: 72px 24px; 
         flex-wrap: wrap;
     }
 
@@ -530,9 +528,8 @@ img {
 
 .client {
     height: 88px;    
-    width: calc((100% - 120px) / 2);
+    width: calc((100% - 16px) / 2);
     gap: 16px;
-    margin-left: 35px;
 }
 
 .a-cli {
@@ -574,7 +571,7 @@ img {
 
     .client {
         height: 88px;    
-        width: calc((100% - 16px) / 3);
+        width: calc((100% - 48px) / 3);
         gap: 24px;
         margin-left: 0px;
     }
@@ -613,14 +610,15 @@ img {
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
-      max-width: 1158px;
-      justify-content: center;
+      max-width: 584px;
     }
   }
   @media (min-width: 1158px) {
     .footer-container {
       flex-wrap: nowrap;
       justify-content: center;
+      max-width: 1158px;
+      gap: 0;
     }
   }
   
@@ -1004,7 +1002,8 @@ button {
     cursor: pointer;
     border: none; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 80px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .checkbox {
@@ -1181,11 +1180,13 @@ button {
     .address {
         padding: 16px 0;
         margin-left: 121px;
+        
       }
 
     .contacts {
         color:  #434455;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
       }
     
     .contacts:hover {
@@ -1317,8 +1318,9 @@ button {
   .hamburger-icon {
     width: 32px;
     height: 22px;
-    stroke: var(--navy-blue);
+    stroke: #2E2F42;
     margin-top: 24px;
+    
   }
   .btn-hamburger {
     background-color: #ffffff;
@@ -1425,7 +1427,6 @@ button {
     display: inline-flex;
     padding: 16px 32px;
     align-items: flex-start;
-    margin-top: 48px;
 }
 
 .modal-btn {
