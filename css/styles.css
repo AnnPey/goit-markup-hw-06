@@ -1041,8 +1041,7 @@ button {
     position: absolute;
     right: 24px;
     top: 24px;
-    bottom: 536px;
-    left: 360px;
+    
     border-color: rgba(0, 0, 0, 0.10);
     display: flex; 
     align-items: center; 
