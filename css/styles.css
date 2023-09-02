@@ -166,7 +166,7 @@ img {
 
     text-align: center;
 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/team/dark-bg-mobile.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office/bgmob@1x.jpg);
     background-color: var(--navyblue, #2E2F42);
     background-repeat: no-repeat;
     background-position: center;
@@ -229,7 +229,7 @@ img {
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
         .sec {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/team/Dark-bgtab@2x.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office/Dark-bgtab@2x.jpg);
         }
 
     }
@@ -255,7 +255,7 @@ img {
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
         .sec {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/team/people-office1desk@2x.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office/people-office1desk@2x.jpg);
         }
 
     }
