@@ -268,7 +268,7 @@ img {
 /*section sec-two */
 
 .sec-two{
-    padding: 24px 16px 96px 16px;
+    padding: 24px 0 96px 0;
 }
 
 .ulli-one {
@@ -478,6 +478,8 @@ img {
     }
 
    img {}
+
+
 
 @media screen and (min-width: 768px) {
     .ulli-three {
@@ -762,6 +764,12 @@ img {
     color: var(--white-background-color);
     margin-bottom: 16px;
     width: 398px;
+  }
+
+  @media (max-width: 420px) {
+    .input-sbc {
+      width: 200px;
+    }
   }
 
   @media (min-width: 768px) {
