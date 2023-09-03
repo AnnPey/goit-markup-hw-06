@@ -81,9 +81,14 @@ img {
     max-width: 428px; 
     padding: 0 16px;
     margin: 0 auto;
-    align-items: center;
-    justify-content: center;
+    align-items: center;    
+}
+
+@media screen and (max-width: 767px) {
     
+  .container {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -281,6 +286,14 @@ img {
     gap: 8px; 
 }
 
+@media screen and (max-width: 767px) {
+    
+  .li-one:not(:last-child) {
+    margin: 72px 16px;
+    text-align: center;
+  }
+}
+
 .div-li-all{
     display:none;
 }
@@ -294,7 +307,6 @@ img {
     line-height: 1.1em; 
     letter-spacing: 0.72px;
     align-self: stretch;
-    margin: 72px 16px;
     margin-bottom: 8px;
 }
 
